@@ -7,7 +7,7 @@ RUN apk add --no-cache --virtual gnuradio-build-dependencies \
     automake \
     libtool \
     yasm \
-    textinfo
+    texinfo
 
 ENV REVISION master
 RUN git clone --depth 1 --branch ${REVISION} https://github.com/wbhart/mpir.git /mpir
